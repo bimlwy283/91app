@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Item List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="footable.bootstrap.min.css">
+    <script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="footable.min.js"></script>
+    <script type="text/javascript" src="Order.js"></script>
+</head>
+
+<body>
+    <h2>Item List</h2>
+    <span id="OrderId"></span>
+    <table id="ItemResult" data-paging="true" data-sorting="true" data-filtering="true" class="table"></table>
+    <div>
+        <a href="Order.html"><input type="button" id="GoBack" value="GoBack"></a>
+    </div>
+    <script>
+        initItems();
+        renderItems();
+    </script>
+
+</body>
+
+</html>
+
